@@ -38,7 +38,7 @@
 -- | Toronto Blue Jays             | 77.4             |
 -- | Washington Nationals          | 78.0             |
 -- +-------------------------------+------------------+
-SELECT name, AVG(wins)
+SELECT name, AVG(wins), id
 FROM teams
 WHERE year > 2000
 GROUP BY name;
